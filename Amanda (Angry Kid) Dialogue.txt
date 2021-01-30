@@ -1,0 +1,11 @@
+Hey! Did you steal my book? You better give it back right now.
+Duh, of course it has my name on it. Idiot.
+Ugh, it's red. Stop wasting my time and give it to me.
+My uniform? I don't care about my uniform. Give me back my book!
+Just let me look. I'm sure I can find it faster than you.
+It's red. You should know that by now.
+What do you mean it's not here? (No item that matches)
+Ugh, I'll just take this one. (Failure, lose an item for taking too long)
+You can't send me away! I'll be back! (Sent them away for uniform check/contraband)
+This isn't mine idiot! (Wrong Item)
+Thanks. (Success)

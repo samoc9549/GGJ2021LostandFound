@@ -1,0 +1,10 @@
+Um, excuse me, do you maybe have a... um... water bottle?
+Oh no. I didn't put my name on it. I'm sorry.
+Um... I think it's blue.
+Oh no. Is something wrong with my uniform? I'm sorry.
+No, I'm sorry. Um, my water bottle is blue.
+Um, yeah. It's blue.
+Oh dear. I'm sorry. Maybe I left it at home. (No item that matches)
+I'm sorry, it won't happen again. (Sent them away for uniform check/contraband)
+Um, no. I don't think I should take something that isn't mine. (Wrong Item)
+Thank you! I'll try not to lose it again. (Success)

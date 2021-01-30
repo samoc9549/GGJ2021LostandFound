@@ -1,0 +1,11 @@
+Does it have your name on it?
+What color is your [object]?
+Let me check your uniform. You know the rules.
+Your uniform is all in order.
+That's a dress code violation, come back once you've fixed it.
+Are you sure this is your [object]?
+Is your [object] [color]? (Give several options at once)
+What is your teddy bear's name?
+I'm sorry, but [object] is contraband. I can't give it to you.
+I don't have anything like that, sorry.
+Here’s your [object]!

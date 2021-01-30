@@ -1,0 +1,11 @@
+You there, do you have my Teddy Bear?
+Not yet, I'm planning on having his paw monogrammed though.
+Ugh, he's golden brown you dolt. Have you no taste?
+My uniform? I'll have you know that I'm the one who sets the dress code here!
+Do you know who my Father is? Just give me the best Teddy you have. Obviously mine is the finest.
+My [object] is [color], it's the only one that looks any good after all.
+His name? Beary of course, a fine name for a fine bear.
+You don't have it? Fine, I'll just get Father to buy me a new one. (No item that matches)
+My Father will hear about this! (Sent them away for uniform check/contraband)
+This is definitely not mine. Gross. (Wrong Item)
+Thanks! I'm gonna see if I can get Daddy to give you a raise! (Success)
