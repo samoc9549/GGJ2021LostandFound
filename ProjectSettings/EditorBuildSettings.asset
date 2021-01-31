@@ -6,6 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Title.unity
+    guid: 3700e2a2e26af9e418194b88de067c89
+  - enabled: 1
     path: Assets/Scenes/Amanda.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Calvin.unity
+    guid: dcabc431c45fd124aa4c031f7c75e973
+  - enabled: 1
+    path: Assets/Scenes/Mary.unity
+    guid: f7d76148bfcc0f14c97729e7582efbe8
+  - enabled: 1
+    path: Assets/Scenes/End.unity
+    guid: 2aaeb39acccad5240b3f6b74e9b53301
   m_configObjects: {}
