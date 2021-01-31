@@ -21,12 +21,13 @@ public class DialogueSwitcher : MonoBehaviour
     }
 
     [YarnCommand("switchcolor")]
-    public void ChangeColor(int color)
+    public void ChangeColor(string colorName)
     {
+        int color = int.Parse(colorName);
         if (color == 0)
         {
-            // Rich Kid - pink
-            dialogue.color = new Color(255.0f, 70.0f, 255.0f);
+            // Player - white
+            dialogue.color = new Color(0.0f, 0.0f, 0.0f);
         }
         else if(color == 1)
         {
@@ -42,9 +43,14 @@ public class DialogueSwitcher : MonoBehaviour
             // Ditzy kid - yellow
             dialogue.color = new Color(255.0f, 0.0f, 0.0f);
         }
-        else{
+        else if(color == 4){
             // Other kid - Purple?
             dialogue.color = new Color(85.0f, 0.0f, 255.0f);
+        }
+        else
+        {
+            // Rich Kid - pink
+            dialogue.color = new Color(255.0f, 70.0f, 255.0f);
         }
     }
 }

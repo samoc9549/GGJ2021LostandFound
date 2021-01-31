@@ -1,14 +1,561 @@
-﻿title: Start
+﻿title: AmandaStart
 tags:
 colorID: 0
 position: 0,0
 ---
-Hello, Kid.
+<<set $amanda_top to 1>>
+<<set $amanda_bot to 2>>
+<<set $amanda_num to 3>>
+<<switchcolor DialogueSwitcher 2>>
+Hey! Did you steal my book? You better give it back right now.
+-> Did it have your name on it?
+	<<set $amanda_top to $amanda_num>>
+	[[AmandaName]]
+-> What color is your book?
+	<<set $amanda_bot to $amanda_num>>
+	[[AmandaColor]]
 ===
-title: Finish
+title: AmandaName
 tags:
 colorID: 0
 position: 0,10
 ---
-FINISH!!
+<<set $amanda_num to $amanda_num + 1>>
+<<switchcolor DialogueSwitcher 2>>
+Duh, of course it has my name on it. Idiot.
+-> Did it have your name on it? <<if $amanda_top is 1>>
+	<<set $amanda_top to $amanda_num>>
+	[[AmandaName]]
+-> What color is your book? <<if $amanda_top is 2>>
+	<<set $amanda_top to $amanda_num>>
+	[[AmandaColor]]
+-> Let me check your uniform. You know the rules. <<if $amanda_top is 3>>
+	<<set $amanda_top to $amanda_num>>
+	[[AmandaUniform]]
+-> Are you sure this is your book? <<if $amanda_top is 4>>
+	<<set $amanda_top to $amanda_num>>
+	[[AmandaCertain]]
+-> Did it have your name on it? <<if $amanda_bot is 1>>
+	<<set $amanda_bot to $amanda_num>>
+	[[AmandaName]]
+-> What color is your book? <<if $amanda_bot is 2>>
+	<<set $amanda_bot to $amanda_num>>
+	[[AmandaColor]]
+-> Let me check your uniform. You know the rules. <<if $amanda_bot is 3>>
+	<<set $amanda_bot to $amanda_num>>
+	[[AmandaUniform]]
+-> Are you sure this is your book? <<if $amanda_bot is 4>>
+	<<set $amanda_bot to $amanda_num>>
+	[[AmandaCertain]]
+===
+title: AmandaColor
+tags:
+colorID: 0
+position: 0,20
+---
+<<set $amanda_num to $amanda_num + 1>>
+<<switchcolor DialogueSwitcher 2>>
+Ugh, it's red. Stop wasting my time and give it to me.
+-> Did it have your name on it? <<if $amanda_top is 1>>
+	<<set $amanda_top to $amanda_num>>
+	[[AmandaName]]
+-> What color is your book? <<if $amanda_top is 2>>
+	<<set $amanda_top to $amanda_num>>
+	[[AmandaColor]]
+-> Let me check your uniform. You know the rules. <<if $amanda_top is 3>>
+	<<set $amanda_top to $amanda_num>>
+	[[AmandaUniform]]
+-> Are you sure this is your book? <<if $amanda_top is 4>>
+	<<set $amanda_top to $amanda_num>>
+	[[AmandaCertain]]
+-> Did it have your name on it? <<if $amanda_bot is 1>>
+	<<set $amanda_bot to $amanda_num>>
+	[[AmandaName]]
+-> What color is your book? <<if $amanda_bot is 2>>
+	<<set $amanda_bot to $amanda_num>>
+	[[AmandaColor]]
+-> Let me check your uniform. You know the rules. <<if $amanda_bot is 3>>
+	<<set $amanda_bot to $amanda_num>>
+	[[AmandaUniform]]
+-> Are you sure this is your book? <<if $amanda_bot is 4>>
+	<<set $amanda_bot to $amanda_num>>
+	[[AmandaCertain]]
+===
+title: AmandaUniform
+tags:
+colorID: 0
+position: 0,30
+---
+<<switchcolor DialogueSwitcher 2>>
+My uniform? I don't care about my uniform. Give me back my book!
+[[Your uniform is all in order.|AmandaGoodUniform]]
+[[That's a dress code violation, come back once you've fixed it.|AmandaContrabandUniform]]
+===
+title: AmandaGoodUniform
+tags:
+colorID: 0
+position: 0,40
+---
+<<set $amanda_num to $amanda_num + 1>>
+<<switchcolor DialogueSwitcher 2>>
+Ugh, I told you I don't care about that! Give me my book!
+-> Did it have your name on it? <<if $amanda_top is 1>>
+	<<set $amanda_top to $amanda_num>>
+	[[AmandaName]]
+-> What color is your book? <<if $amanda_top is 2>>
+	<<set $amanda_top to $amanda_num>>
+	[[AmandaColor]]
+-> Let me check your uniform. You know the rules. <<if $amanda_top is 3>>
+	<<set $amanda_top to $amanda_num>>
+	[[AmandaUniform]]
+-> Are you sure this is your book? <<if $amanda_top is 4>>
+	<<set $amanda_top to $amanda_num>>
+	[[AmandaCertain]]
+-> Did it have your name on it? <<if $amanda_bot is 1>>
+	<<set $amanda_bot to $amanda_num>>
+	[[AmandaName]]
+-> What color is your book? <<if $amanda_bot is 2>>
+	<<set $amanda_bot to $amanda_num>>
+	[[AmandaColor]]
+-> Let me check your uniform. You know the rules. <<if $amanda_bot is 3>>
+	<<set $amanda_bot to $amanda_num>>
+	[[AmandaUniform]]
+-> Are you sure this is your book? <<if $amanda_bot is 4>>
+	<<set $amanda_bot to $amanda_num>>
+	[[AmandaCertain]]
+===
+title: AmandaCertain
+tags:
+colorID: 0
+position: 0,40
+---
+<<set $amanda_num to $amanda_num + 1>>
+<<switchcolor DialogueSwitcher 2>>
+Just let me look. I'm sure I can find it faster than you.
+-> Did it have your name on it? <<if $amanda_top is 1>>
+	<<set $amanda_top to $amanda_num>>
+	[[AmandaName]]
+-> What color is your book? <<if $amanda_top is 2>>
+	<<set $amanda_top to $amanda_num>>
+	[[AmandaColor]]
+-> Let me check your uniform. You know the rules. <<if $amanda_top is 3>>
+	<<set $amanda_top to $amanda_num>>
+	[[AmandaUniform]]
+-> Are you sure this is your book? <<if $amanda_top is 4>>
+	<<set $amanda_top to $amanda_num>>
+	[[AmandaCertain]]
+-> Did it have your name on it? <<if $amanda_bot is 1>>
+	<<set $amanda_bot to $amanda_num>>
+	[[AmandaName]]
+-> What color is your book? <<if $amanda_bot is 2>>
+	<<set $amanda_bot to $amanda_num>>
+	[[AmandaColor]]
+-> Let me check your uniform. You know the rules. <<if $amanda_bot is 3>>
+	<<set $amanda_bot to $amanda_num>>
+	[[AmandaUniform]]
+-> Are you sure this is your book? <<if $amanda_bot is 4>>
+	<<set $amanda_bot to $amanda_num>>
+	[[AmandaCertain]]
+===
+title: AmandaColorAgain
+tags:
+colorID: 0
+position: 0,50
+---
+<<set $amanda_num to $amanda_num + 1>>
+<<switchcolor DialogueSwitcher 2>>
+It's red. You should know that by now.
+-> Did it have your name on it? <<if $amanda_top is 1>>
+	<<set $amanda_top to $amanda_num>>
+	[[AmandaName]]
+-> What color is your book? <<if $amanda_top is 2>>
+	<<set $amanda_top to $amanda_num>>
+	[[AmandaColor]]
+-> Let me check your uniform. You know the rules. <<if $amanda_top is 3>>
+	<<set $amanda_top to $amanda_num>>
+	[[AmandaUniform]]
+-> Are you sure this is your book? <<if $amanda_top is 4>>
+	<<set $amanda_top to $amanda_num>>
+	[[AmandaCertain]]
+-> Did it have your name on it? <<if $amanda_bot is 1>>
+	<<set $amanda_bot to $amanda_num>>
+	[[AmandaName]]
+-> What color is your book? <<if $amanda_bot is 2>>
+	<<set $amanda_bot to $amanda_num>>
+	[[AmandaColor]]
+-> Let me check your uniform. You know the rules. <<if $amanda_bot is 3>>
+	<<set $amanda_bot to $amanda_num>>
+	[[AmandaUniform]]
+-> Are you sure this is your book? <<if $amanda_bot is 4>>
+	<<set $amanda_bot to $amanda_num>>
+	[[AmandaCertain]]
+===
+title: AmandaNothing
+tags:
+colorID: 0
+position: 0,60
+---
+<<switchcolor DialogueSwitcher 0>>
+I don't have anything like that, sorry.
+<<switchcolor DialogueSwitcher 2>>
+What do you mean it's not here?
+<<switchcolor DialogueSwitcher 0>>
+Sorry, nothing we have here matches that. Have a good day!
+<<switchcolor DialogueSwitcher 2>>
+Ugh, fine! You'll be hearing from me!
+[[Fail]]
+===
+title: AmandaContrabandUniform
+tags:
+colorID: 0
+position: 0,70
+---
+<<switchcolor DialogueSwitcher 2>>
+You can't send me away! I'll be back!
+[[Fail]]
+===
+title: AmandaCorrect
+tags:
+colorID: 0
+position: 0,80
+---
+<<switchcolor DialogueSwitcher 2>>
+Thanks.
+[[Pass]]
+===
+title: AmandaTooLong
+tags:
+colorID: 0
+position: 0,90
+---
+<<switchcolor DialogueSwitcher 2>>
+Ugh, I'll just take this one.
+[[Fail]]
+===
+title: AmandaWrong
+tags:
+colorID: 0
+position: 0,100
+---
+<<switchcolor DialogueSwitcher 2>>
+This isn't mine idiot!
+[[Fail]]
+===
+title: Pass
+tags:
+colorID: 0
+position: 500,500
+---
+<<end SceneManager pass>>
+===
+title: Fail
+tags:
+colorID: 0
+position: 600,600
+---
+<<end SceneManager fail>>
+===
+title: CalvinStart
+tags:
+colorID: 0
+position: 0,0
+---
+<<set $calvin_top to 1>>
+<<set $calvin_bot to 2>>
+<<set $calvin_num to 3>>
+<<switchcolor DialogueSwitcher 5>>
+You there, do you have my Teddy Bear?
+-> Did it have your name on it?
+	<<set $calvin_top to $calvin_num>>
+	[[CalvinName]]
+-> What color is your book?
+	<<set $calvin_bot to $calvin_num>>
+	[[CalvinColor]]
+===
+title: CalvinName
+tags:
+colorID: 0
+position: 0,10
+---
+<<set $calvin_num to $calvin_num + 1>>
+<<switchcolor DialogueSwitcher 5>>
+Not yet, I'm planning on having his paw monogrammed though.
+-> Did it have your name on it? <<if $calvin_top is 1>>
+	<<set $calvin_top to $calvin_num>>
+	[[CalvinName]]
+-> What color is your book? <<if $calvin_top is 2>>
+	<<set $calvin_top to $calvin_num>>
+	[[CalvinColor]]
+-> Let me check your uniform. You know the rules. <<if $calvin_top is 3>>
+	<<set $calvin_top to $calvin_num>>
+	[[CalvinUniform]]
+-> Are you sure this is your book? <<if $calvin_top is 4>>
+	<<set $calvin_top to $calvin_num>>
+	[[CalvinCertain]]
+-> What is your teddy bear's name? <<if $calvin_top is 5>>
+	<<set $calvin_top to $calvin_num>>
+	[[CalvinBearName]]
+-> Did it have your name on it? <<if $calvin_bot is 1>>
+	<<set $calvin_bot to $calvin_num>>
+	[[CalvinName]]
+-> What color is your book? <<if $calvin_bot is 2>>
+	<<set $calvin_bot to $calvin_num>>
+	[[CalvinColor]]
+-> Let me check your uniform. You know the rules. <<if $calvin_bot is 3>>
+	<<set $calvin_bot to $calvin_num>>
+	[[CalvinUniform]]
+-> Are you sure this is your book? <<if $calvin_bot is 4>>
+	<<set $calvin_bot to $calvin_num>>
+	[[CalvinCertain]]
+-> What is your teddy bear's name? <<if $calvin_bot is 5>>
+	<<set $calvin_bot to $calvin_num>>
+	[[CalvinBearName]]
+===
+title: CalvinColor
+tags:
+colorID: 0
+position: 0,20
+---
+<<set $calvin_num to $calvin_num + 1>>
+<<switchcolor DialogueSwitcher 5>>
+Ugh, he's golden brown you dolt. Not too dark, not too light. Have you no taste?
+-> Did it have your name on it? <<if $calvin_top is 1>>
+	<<set $calvin_top to $calvin_num>>
+	[[CalvinName]]
+-> What color is your book? <<if $calvin_top is 2>>
+	<<set $calvin_top to $calvin_num>>
+	[[CalvinColor]]
+-> Let me check your uniform. You know the rules. <<if $calvin_top is 3>>
+	<<set $calvin_top to $calvin_num>>
+	[[CalvinUniform]]
+-> Are you sure this is your book? <<if $calvin_top is 4>>
+	<<set $calvin_top to $calvin_num>>
+	[[CalvinCertain]]
+-> What is your teddy bear's name? <<if $calvin_top is 5>>
+	<<set $calvin_top to $calvin_num>>
+	[[CalvinBearName]]
+-> Did it have your name on it? <<if $calvin_bot is 1>>
+	<<set $calvin_bot to $calvin_num>>
+	[[CalvinName]]
+-> What color is your book? <<if $calvin_bot is 2>>
+	<<set $calvin_bot to $calvin_num>>
+	[[CalvinColor]]
+-> Let me check your uniform. You know the rules. <<if $calvin_bot is 3>>
+	<<set $calvin_bot to $calvin_num>>
+	[[CalvinUniform]]
+-> Are you sure this is your book? <<if $calvin_bot is 4>>
+	<<set $calvin_bot to $calvin_num>>
+	[[CalvinCertain]]
+-> What is your teddy bear's name? <<if $calvin_bot is 5>>
+	<<set $calvin_bot to $calvin_num>>
+	[[CalvinBearName]]
+===
+title: CalvinUniform
+tags:
+colorID: 0
+position: 0,30
+---
+<<switchcolor DialogueSwitcher 5>>
+My uniform? I'll have you know that I'm the one who sets the dress code here!
+[[Your uniform is all in order.|CalvinGoodUniform]]
+[[That's a dress code violation, come back once you've fixed it.|CalvinContrabandUniform]]
+===
+title: CalvinGoodUniform
+tags:
+colorID: 0
+position: 0,40
+---
+<<set $calvin_num to $calvin_num + 1>>
+<<switchcolor DialogueSwitcher 5>>
+Ugh, I told you I don't care about that! Give me my book!
+-> Did it have your name on it? <<if $calvin_top is 1>>
+	<<set $calvin_top to $calvin_num>>
+	[[CalvinName]]
+-> What color is your book? <<if $calvin_top is 2>>
+	<<set $calvin_top to $calvin_num>>
+	[[CalvinColor]]
+-> Let me check your uniform. You know the rules. <<if $calvin_top is 3>>
+	<<set $calvin_top to $calvin_num>>
+	[[CalvinUniform]]
+-> Are you sure this is your book? <<if $calvin_top is 4>>
+	<<set $calvin_top to $calvin_num>>
+	[[CalvinCertain]]
+-> What is your teddy bear's name? <<if $calvin_top is 5>>
+	<<set $calvin_top to $calvin_num>>
+	[[CalvinBearName]]
+-> Did it have your name on it? <<if $calvin_bot is 1>>
+	<<set $calvin_bot to $calvin_num>>
+	[[CalvinName]]
+-> What color is your book? <<if $calvin_bot is 2>>
+	<<set $calvin_bot to $calvin_num>>
+	[[CalvinColor]]
+-> Let me check your uniform. You know the rules. <<if $calvin_bot is 3>>
+	<<set $calvin_bot to $calvin_num>>
+	[[CalvinUniform]]
+-> Are you sure this is your book? <<if $calvin_bot is 4>>
+	<<set $calvin_bot to $calvin_num>>
+	[[CalvinCertain]]
+-> What is your teddy bear's name? <<if $calvin_bot is 5>>
+	<<set $calvin_bot to $calvin_num>>
+	[[CalvinBearName]]
+===
+title: CalvinCertain
+tags:
+colorID: 0
+position: 0,40
+---
+<<set $calvin_num to $calvin_num + 1>>
+<<switchcolor DialogueSwitcher 5>>
+Do you know who my Father is?
+Just give me the best Teddy you have. Obviously mine is the finest.
+-> Did it have your name on it? <<if $calvin_top is 1>>
+	<<set $calvin_top to $calvin_num>>
+	[[CalvinName]]
+-> What color is your book? <<if $calvin_top is 2>>
+	<<set $calvin_top to $calvin_num>>
+	[[CalvinColor]]
+-> Let me check your uniform. You know the rules. <<if $calvin_top is 3>>
+	<<set $calvin_top to $calvin_num>>
+	[[CalvinUniform]]
+-> Are you sure this is your book? <<if $calvin_top is 4>>
+	<<set $calvin_top to $calvin_num>>
+	[[CalvinCertain]]
+-> What is your teddy bear's name? <<if $calvin_top is 5>>
+	<<set $calvin_top to $calvin_num>>
+	[[CalvinBearName]]
+-> Did it have your name on it? <<if $calvin_bot is 1>>
+	<<set $calvin_bot to $calvin_num>>
+	[[CalvinName]]
+-> What color is your book? <<if $calvin_bot is 2>>
+	<<set $calvin_bot to $calvin_num>>
+	[[CalvinColor]]
+-> Let me check your uniform. You know the rules. <<if $calvin_bot is 3>>
+	<<set $calvin_bot to $calvin_num>>
+	[[CalvinUniform]]
+-> Are you sure this is your book? <<if $calvin_bot is 4>>
+	<<set $calvin_bot to $calvin_num>>
+	[[CalvinCertain]]
+-> What is your teddy bear's name? <<if $calvin_bot is 5>>
+	<<set $calvin_bot to $calvin_num>>
+	[[CalvinBearName]]
+===
+title: CalvinColorAgain
+tags:
+colorID: 0
+position: 0,50
+---
+<<set $calvin_num to $calvin_num + 1>>
+<<switchcolor DialogueSwitcher 5>>
+My Teddy is golden brown, it's the only one that looks any good after all.
+-> Did it have your name on it? <<if $calvin_top is 1>>
+	<<set $calvin_top to $calvin_num>>
+	[[CalvinName]]
+-> What color is your book? <<if $calvin_top is 2>>
+	<<set $calvin_top to $calvin_num>>
+	[[CalvinColor]]
+-> Let me check your uniform. You know the rules. <<if $calvin_top is 3>>
+	<<set $calvin_top to $calvin_num>>
+	[[CalvinUniform]]
+-> Are you sure this is your book? <<if $calvin_top is 4>>
+	<<set $calvin_top to $calvin_num>>
+	[[CalvinCertain]]
+-> What is your teddy bear's name? <<if $calvin_top is 5>>
+	<<set $calvin_top to $calvin_num>>
+	[[CalvinBearName]]
+-> Did it have your name on it? <<if $calvin_bot is 1>>
+	<<set $calvin_bot to $calvin_num>>
+	[[CalvinName]]
+-> What color is your book? <<if $calvin_bot is 2>>
+	<<set $calvin_bot to $calvin_num>>
+	[[CalvinColor]]
+-> Let me check your uniform. You know the rules. <<if $calvin_bot is 3>>
+	<<set $calvin_bot to $calvin_num>>
+	[[CalvinUniform]]
+-> Are you sure this is your book? <<if $calvin_bot is 4>>
+	<<set $calvin_bot to $calvin_num>>
+	[[CalvinCertain]]
+-> What is your teddy bear's name? <<if $calvin_bot is 5>>
+	<<set $calvin_bot to $calvin_num>>
+	[[CalvinBearName]]
+===
+
+title: CalvinBearName
+tags:
+colorID: 0
+position: 0,50
+---
+<<set $calvin_num to $calvin_num + 1>>
+<<switchcolor DialogueSwitcher 5>>
+His name? Beary of course, a fine name for a fine bear.
+-> Did it have your name on it? <<if $calvin_top is 1>>
+	<<set $calvin_top to $calvin_num>>
+	[[CalvinName]]
+-> What color is your book? <<if $calvin_top is 2>>
+	<<set $calvin_top to $calvin_num>>
+	[[CalvinColor]]
+-> Let me check your uniform. You know the rules. <<if $calvin_top is 3>>
+	<<set $calvin_top to $calvin_num>>
+	[[CalvinUniform]]
+-> Are you sure this is your book? <<if $calvin_top is 4>>
+	<<set $calvin_top to $calvin_num>>
+	[[CalvinCertain]]
+-> What is your teddy bear's name? <<if $calvin_top is 5>>
+	<<set $calvin_top to $calvin_num>>
+	[[CalvinBearName]]
+-> Did it have your name on it? <<if $calvin_bot is 1>>
+	<<set $calvin_bot to $calvin_num>>
+	[[CalvinName]]
+-> What color is your book? <<if $calvin_bot is 2>>
+	<<set $calvin_bot to $calvin_num>>
+	[[CalvinColor]]
+-> Let me check your uniform. You know the rules. <<if $calvin_bot is 3>>
+	<<set $calvin_bot to $calvin_num>>
+	[[CalvinUniform]]
+-> Are you sure this is your book? <<if $calvin_bot is 4>>
+	<<set $calvin_bot to $calvin_num>>
+	[[CalvinCertain]]
+-> What is your teddy bear's name? <<if $calvin_bot is 5>>
+	<<set $calvin_bot to $calvin_num>>
+	[[CalvinBearName]]
+===
+title: CalvinNothing
+tags:
+colorID: 0
+position: 0,60
+---
+<<switchcolor DialogueSwitcher 0>>
+I don't have anything like that, sorry.
+<<switchcolor DialogueSwitcher 5>>
+You don't have it?
+Fine, I'll just get Father to buy me a new one.
+[[Fail]]
+===
+title: CalvinContrabandUniform
+tags:
+colorID: 0
+position: 0,70
+---
+<<switchcolor DialogueSwitcher 5>>
+My Father will hear about this!
+[[Fail]]
+===
+title: CalvinCorrect
+tags:
+colorID: 0
+position: 0,80
+---
+<<switchcolor DialogueSwitcher 5>>
+Thanks!
+I'm gonna see if I can get Daddy to give you a raise!
+[[Pass]]
+===
+title: CalvinWrong
+tags:
+colorID: 0
+position: 0,100
+---
+<<switchcolor DialogueSwitcher 5>>
+This is definitely not mine.
+Gross.
+[[Fail]]
 ===
