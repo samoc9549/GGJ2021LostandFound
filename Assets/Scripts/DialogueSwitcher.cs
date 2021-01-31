@@ -21,29 +21,28 @@ public class DialogueSwitcher : MonoBehaviour
     }
 
     [YarnCommand("switchcolor")]
-    public void ChangeColor(string colorName)
+    public void ChangeColor(string color)
     {
-        int color = int.Parse(colorName);
-        if (color == 0)
+        if (color == "0")
         {
             // Player - white
-            dialogue.color = new Color(0.0f, 0.0f, 0.0f);
+            dialogue.color = new Color(255.0f, 255.0f, 255.0f);
         }
-        else if(color == 1)
+        else if(color == "1")
         {
             // Shy Kid - blue
             dialogue.color = new Color(0.0f, 121.0f, 255.0f);
         }
-        else if(color == 2)
+        else if(color == "2")
         {
             // Angry Kid - red
             dialogue.color = new Color(255.0f, 0.0f, 0.0f);
         }
-        else if(color == 3){
+        else if(color == "3"){
             // Ditzy kid - yellow
             dialogue.color = new Color(255.0f, 0.0f, 0.0f);
         }
-        else if(color == 4){
+        else if(color == "4"){
             // Other kid - Purple?
             dialogue.color = new Color(85.0f, 0.0f, 255.0f);
         }
